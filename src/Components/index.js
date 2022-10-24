@@ -1,0 +1,11 @@
+export { default as NavBar } from "./NavBar";
+export { default as SideBar } from "./SideBar";
+export { default as Chat } from "./Chat";
+export { default as UserProfile } from "./UserProfile";
+export { default as Notification } from "./Notification";
+export { default as ToDayPatients } from "./ToDayPatients";
+export { default as Doughnut } from "./Pie";
+export { default as EventsComponent } from "./EventsComponent";
+export { default as EarningChart } from "./EarningChart";
+export { default as ToDoList } from "./ToDoList";
+export { default as PatientsComments } from "./PatientsComments";

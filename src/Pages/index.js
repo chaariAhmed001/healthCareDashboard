@@ -1,0 +1,11 @@
+export { default as Home } from "./Home";
+export { default as Appointments } from "./Appointments";
+export { default as Chats } from "./Chats";
+export { default as Employees } from "./Employees";
+export { default as Login } from "./Login";
+export { default as Messages } from "./Messages";
+export { default as PasswordRecovery } from "./PasswordRecovery";
+export { default as Patients } from "./Patients";
+export { default as SignUp } from "./SignUp";
+export { default as ToDo } from "./ToDo";
+export { default as NotFound } from "./NotFound";
