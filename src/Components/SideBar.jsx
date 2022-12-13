@@ -1,14 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { GiHeartBeats } from "react-icons/gi";
-import { MdOutlineCancel } from "react-icons/md";
-import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { icon2, icon3, links } from "../Data/data";
+import { icon3, links } from "../Data/data";
 import { appContext } from "../Context/appContext.js";
 
 const SideBar = () => {
-  const { closeMenu, setCloseMenu, activeMenu, setActiveMenu } =
-    useContext(appContext);
+  const {  activeMenu } =useContext(appContext);
 
   const [activeSubMenu, setActiveSubMenu] = useState();
   const [openSubMenu, setOpenSubMenu] = useState(false);
@@ -23,11 +19,11 @@ const SideBar = () => {
   const normalSubMenu =
     "font-semibold capitalize flex items-center gap-x-4 cursor-pointer px-5 p-2 ml-6 rounded-md text-primry-color hover:bg-main-bg hover:text-secondary-color dark:text-white dark:hover:text-secondary-color dark:hover:bg-[#201A23]/75";
   return (
-    <div className="h-[630px] p-4 pt-8 md:overflow-hidden overflow-auto md:hover:overflow-auto w-full text-secondary-color">
+    <div className={`min-h-[95vh] p-4 pt-8 md:overflow-hidden overflow-auto md:hover:overflow-auto w-full text-secondary-color`}>
       <div className="flex justify-between items-center">
         <Link to="/" className="flex gap-2 items-center text-2xl font-bold ">
           <svg
-            className={activeMenu && " duration-500 rotate-[360deg] "}
+            className={activeMenu && "md:duration-500 rotate-[360deg]"}
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -59,15 +55,6 @@ const SideBar = () => {
             Healthcare
           </span>
         </Link>
-        <TooltipComponent content="Menu" position="BottomCenter">
-          <button
-            type="button"
-            className={`text-xl block ${!activeMenu && "hidden"} md:hidden `}
-            onClick={() => setCloseMenu(!closeMenu)}
-          >
-            {icon2}
-          </button>
-        </TooltipComponent>
       </div>
       <div className="mt-5">
         <ul>
@@ -78,13 +65,14 @@ const SideBar = () => {
                 to={`/${ link.submenu ? link.links[0] : link.title}`}
                 className={({ isActive }) => (isActive ? active : noteActive)}
                 onClick={() => setactevLink(!actevLink)}
+                
               >
                 <span
                   className={`w-8 h-8 flex items-center justify-center ${link.submenu && 'ml-3'}`}
                 >
                   {link.icon}
                 </span>
-                <span className={` flex-1 ${!activeMenu && "hidden"}`}>
+                <span className={` flex-1 ${!activeMenu && "hidden"}`} >
                   {link.title}
                 </span>
                 {link.submenu && (
@@ -106,7 +94,7 @@ const SideBar = () => {
                   <NavLink
                     to={`/${link}`}
                     key={index}
-                    className={({ isActive }) =>
+                    className={ ({ isActive }) =>
                       isActive ? subMenuActive : normalSubMenu
                     }
                     onClick={() => setactevLink(!actevLink)}

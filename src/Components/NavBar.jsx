@@ -8,11 +8,7 @@ import {Chat,Notification,UserProfile} from "./index"
 
 
 const NavBarButton = ({ name, icon }) => {
-  const { darkthem, setDarkthem ,
-    handleClick,
-    
-  } = useContext(appContext);
-  
+  const { darkthem, setDarkthem ,handleClick} = useContext(appContext);
   
   return (
     <TooltipComponent content={name} position="BottomCenter">
@@ -41,9 +37,7 @@ const NavBarButton = ({ name, icon }) => {
 };
 
 const NavBar = () => {
-  const { activeMenu, setActiveMenu, isClicked ,handleClick,screenSize,setScreenSize,closeMenu,
-    setCloseMenu,} =
-    useContext(appContext);
+  const { activeMenu, setActiveMenu, isClicked ,handleClick,screenSize,setScreenSize,setCloseMenu,} =useContext(appContext);
     useEffect(() => {
       //get width of the screen 
       const hanleScreenSize = () => setScreenSize(()=> window.innerWidth);
@@ -54,16 +48,16 @@ const NavBar = () => {
       return () => {
         window.removeEventListener('resize',hanleScreenSize)
       }
-    }, [])
+    }, [screenSize])
     useEffect(() => {
-      if (screenSize <= 900) {
-        setCloseMenu(false);
+      if (screenSize <= 800) {
+        setActiveMenu(false)        
       } else {
-        setCloseMenu(true);
+        setActiveMenu(true) 
       }
     }, [screenSize])
   return (
-    <div className="m-5" >
+    <div className="m-5">
       <div className="flex justify-between items-center">
         <div className=" flex  items-center justify-center">
           <div
@@ -72,10 +66,11 @@ const NavBar = () => {
               setActiveMenu(!activeMenu);
               setCloseMenu(true)
             }}
+            style={{  display: screenSize<='600' && 'none' }}
           >
             {icon}
           </div>
-          <div className="w-60 h-8 ml-4 px-2 ring-offset-2 ring-2 bg-white rounded-lg hidden md:flex items-center text-sm text-primry-color shadow-sm dark:text-white dark:bg-secondary-dark-bg/75  ">
+          <div className="w-54 lg:w-60 h-8 ml-4 px-2 ring-offset-2 ring-2 bg-white rounded-lg hidden md:flex items-center text-sm text-primry-color shadow-sm dark:text-white dark:bg-secondary-dark-bg/75  ">
             {searchIcon}
             <input
               type="text"

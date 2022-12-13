@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { appContext } from '../Context/appContext.js'
 import { eventsData } from '../Data/data'
 
 const EventsComponent = () => {
+  const {activeMenu} = useContext(appContext)
+
   return (
-    <div className='w-100 lg:w-[34vw] bg-white dark:bg-secondary-dark-bg ml-5 my-4 p-4 rounded-lg drop-shadow-md '>
+    <div className={`${activeMenu? 'md:w-full lg:w-[95%] xl:w-[47%]': 'w-[95%] sm:w-full md:w-[96%] lg:w-[47%] xl:w-[35%]'} h-[310px] ml-1 md:ml-5 my-2 mt-4 p-2 sm:p-4 bg-white dark:bg-secondary-dark-bg rounded-lg drop-shadow-md`}>
           <span className='text-primry-color dark:text-white font-bold text-lg'>Today Events</span>
           {
             eventsData.map((item,key)=>
@@ -11,11 +14,13 @@ const EventsComponent = () => {
                     <div className='bg-main-bg dark:bg-[#201A23]/75  p-2 text-secondary-color dark:text-white rounded-lg drop-shadow-sm w-12 h-12 mr-3 pt-2'>
                         {item.icon}
                     </div>
-                    <div className='flex flex-col text-sm w-full text-primry-color dark:text-white'>
-                        <span className=' font-extrabold '>{item.title}</span>
-                        <span className='text-gray-400 font-light'>{item.desc}</span>
+                    <div className='flex justify-between items-center w-full'>
+                      <div className='flex flex-col text-sm  text-primry-color dark:text-white'>
+                          <span className=' font-extrabold '>{item.title}</span>
+                          <span className='text-gray-400 font-light'>{item.desc}</span>
+                      </div>
+                      <span className='text-sm font-bold text-primry-color'>{item.Time}</span>
                     </div>
-                    <span className='text-md font-bold w-full text-primry-color'>{item.Time}</span>
                 </div>
             )
           }

@@ -6,7 +6,7 @@ const PatientsComments = () => {
     const {activeMenu} = useContext(appContext)
 
   return (
-    <div className={`bg-white dark:bg-secondary-dark-bg h-64 rounded-lg drop-shadow-md p-4 ${!activeMenu ?  'w-60' : 'w-72'}`}>
+    <div className={`bg-white dark:bg-secondary-dark-bg rounded-lg drop-shadow-md p-4 h-[310px] ml-11 mt-4 w-[270px]`}>
         <span className="text-primry-color dark:text-white font-bold text-lg">Patient Comments</span>
         <div>
         {commentsList.map((item,index)=>

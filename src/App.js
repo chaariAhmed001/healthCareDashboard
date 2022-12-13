@@ -36,7 +36,6 @@ function App() {
       [clicked]: action === "open" ? true : false,
     });
   };
-
   return (
     <div className={darkthem && "dark"}>
       <BrowserRouter>
@@ -55,21 +54,21 @@ function App() {
             handleClick,
           }}
         >
-          <div className=" bg-main-bg dark:bg-main-dark-bg min-w-screen min-h-screen">
+          <div className=" bg-main-bg dark:bg-main-dark-bg">
             <div
-              className={`flex fixed m-1 lg:m-4 rounded-2xl bg-white dark:bg-secondary-dark-bg
+              className={`flex fixed m-1 lg:m-4 rounded-2xl bg-white dark:bg-secondary-dark-bg ${screenSize <=900 && 'mt-4'}
               ${closeMenu ? " w-72" : " hidden "} duration-300 ${
                 activeMenu ? "w-72 " : "w-16 md:block"
               }`}
               style={{ zIndex: "100000" }}
             >
-              {/* <SideBar /> */}
+             <SideBar />
             </div>
-            <div className={`flex flex-col ${activeMenu ? "ml-72" : "ml-0"}`}>
+            <div className={`flex flex-col ${activeMenu ? "ml-72" : "ml-16"}`}>
               <div className="sticky z-50 bg-clip-padding">
                 <NavBar />
               </div>
-              <div className="min-h-screen min-w-screen">
+              <div className="flex min-h-full">
                 <Routes>
                   {/* dashboard */}
                   <Route path="/" element={<Home />} />

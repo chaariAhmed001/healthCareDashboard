@@ -1137,7 +1137,7 @@ export const lineCustomSeries = [
       visible: true,
       width: 10,
       height: 10,
-      border: { color: "#141B41" },
+      border: { color: "#E08E45" },
     },
     type: "Line",
   },
@@ -1501,19 +1501,19 @@ export const eventsData = [
     icon: meetingIcon,
     title: "Meeting",
     desc: "with joe black",
-    Time: "10:30AM- 11:00AM",
+    Time: "10:30 am",
   },
   {
     icon: universityIcon,
     title: "Lecture",
-    desc: "Weill Cornell Medicine",
-    Time: "15:00PM- 16:30PM",
+    desc: "Harvard School",
+    Time: "14:00 pm",
   },
   {
     icon: hospitalIcon,
     title: "Metting",
     desc: "Board Meeting",
-    Time: "17:30PM- 18:30PM",
+    Time: "17:30 pm",
   },
 ];
 export const areaChartData = [
@@ -1708,6 +1708,106 @@ export const toDoList = [
     title: "Lecture presentation",
     desc: "Mar 15 at 8pm",
   },
+  {
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.5 9.5V14.5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M18.5 9.5V14.5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    title: "Run Payroll",
+    desc: "Mar 1 at 8pm",
+  },
+  {
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.99995 22H15.9999C20.0199 22 20.7399 20.39 20.9499 18.43L21.6999 10.43C21.9699 7.99 21.2699 6 16.9999 6H6.99995C2.72995 6 2.02995 7.99 2.29995 10.43L3.04995 18.43C3.25995 20.39 3.97995 22 7.99995 22Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M2.62 11.27C4.87 12.81 7.41 13.74 10 14.03"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    ),
+    title: "Hire new secretary",
+    desc: "Mar 12 at 8pm",
+  }
 ];
 export const commentsList = [
   {
