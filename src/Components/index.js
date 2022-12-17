@@ -9,3 +9,5 @@ export { default as EventsComponent } from "./EventsComponent";
 export { default as EarningChart } from "./EarningChart";
 export { default as ToDoList } from "./ToDoList";
 export { default as PatientsComments } from "./PatientsComments";
+export { default as Lists } from "./Lists";
+export { default as PatientDetails } from "./PatientDetails";

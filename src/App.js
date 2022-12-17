@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { SideBar, NavBar } from "./Components";
@@ -17,6 +17,7 @@ import {
   NotFound,
 } from "./Pages";
 import { appContext } from "./Context/appContext.js";
+import { patientsList } from "./Data/data";
 
 function App() {
   const initialState = {
@@ -29,13 +30,18 @@ function App() {
   const [activeMenu, setActiveMenu] = useState(true);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
-
+  const [showPatientDetails, setShowPatientDetails] = useState(false);
+  const [patientDetails, setPatientDetails] = useState(null);
   const handleClick = (clicked, action) => {
     setIsClicked({
       ...initialState,
       [clicked]: action === "open" ? true : false,
     });
   };
+  useEffect(() => {
+    setPatientDetails(patientsList?.[0]);
+  }, []);
+
   return (
     <div className={darkthem && "dark"}>
       <BrowserRouter>
@@ -52,17 +58,23 @@ function App() {
             screenSize,
             setScreenSize,
             handleClick,
+            showPatientDetails,
+            setShowPatientDetails,
+            patientDetails,
+            setPatientDetails,
           }}
         >
           <div className=" bg-main-bg dark:bg-main-dark-bg">
             <div
-              className={`flex fixed m-1 lg:m-4 rounded-2xl bg-white dark:bg-secondary-dark-bg ${screenSize <=900 && 'mt-4'}
+              className={`flex fixed m-1 lg:m-4 rounded-2xl bg-white dark:bg-secondary-dark-bg ${
+                screenSize <= 900 && "mt-4"
+              }
               ${closeMenu ? " w-72" : " hidden "} duration-300 ${
                 activeMenu ? "w-72 " : "w-16 md:block"
               }`}
               style={{ zIndex: "100000" }}
             >
-             <SideBar />
+              <SideBar />
             </div>
             <div className={`flex flex-col ${activeMenu ? "ml-72" : "ml-16"}`}>
               <div className="sticky z-50 bg-clip-padding">

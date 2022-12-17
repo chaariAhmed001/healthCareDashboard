@@ -14,12 +14,19 @@ import { appContext } from "../Context/appContext.js";
 
 const AnalyticsComponent = () => {
   const [selected, setSelected] = useState("This Week");
-  const {darkthem,screenSize,activeMenu} = useContext(appContext)
+  const { darkthem, screenSize, activeMenu } = useContext(appContext);
   return (
-    <div className={`w-full ${activeMenu ?  'lg:w-[95%] xl:w-[96%]': 'lg:w-[96%] xl:w-[71%]'}  flex justify-center flex-wrap  bg-white dark:bg-secondary-dark-bg m-1 md:ml-5 drop-shadow-md rounded-2xl text-primry-color dark:text-white`}>
+    <div
+      className={`w-full ${
+        activeMenu ? "lg:w-[95%] xl:w-[96%]" : "lg:w-[96%] xl:w-[71%]"
+      }  flex justify-center flex-wrap  bg-white dark:bg-secondary-dark-bg m-1 md:ml-5 drop-shadow-md rounded-2xl text-primry-color dark:text-white`}
+    >
       <div className="flex items-center justify-between mb-2 ml-2 pt-4 px-4 w-full">
-          <span className="text-primry-color dark:text-white font-bold text-xl">Patients Analytics</span>
-          {screenSize >= 500 && <select
+        <span className="text-primry-color dark:text-white font-bold text-xl">
+          Patients Analytics
+        </span>
+        {screenSize >= 500 && (
+          <select
             id="countries"
             value={selected}
             onChange={(e) => setSelected(e.target.value)}
@@ -28,7 +35,8 @@ const AnalyticsComponent = () => {
             <option selected>This Week</option>
             <option value="By Mounth">By Mounth</option>
             <option value="By Year">By Year</option>
-          </select>}
+          </select>
+        )}
       </div>
       <div className="flex w-full flex-col xl:flex-row">
         <div className="flex flex-wrap flex-col justify-center sm:flex-row xl:flex-col w-full">
@@ -51,13 +59,13 @@ const AnalyticsComponent = () => {
           <ChartComponent
             id="line-chart"
             primaryXAxis={{ valueType: "Category" }}
-            primaryYAxis={{ minimum:10 , maximum: 50}}
+            primaryYAxis={{ minimum: 10, maximum: 50 }}
             chartArea={{ border: { width: 0 } }}
             tooltip={{ enable: true }}
-            background={ darkthem ? "#2E2532": "white"}
+            background={darkthem ? "#2E2532" : "white"}
             height="240px"
             width="full"
-            style={{borderRadius: "1rem"}}
+            style={{ borderRadius: "1rem" }}
             palettes={["#E08E45", "#3F8EFC"]}
           >
             <Inject services={[LineSeries, Tooltip, Category]} />
@@ -69,7 +77,6 @@ const AnalyticsComponent = () => {
           </ChartComponent>
         </div>
       </div>
-      
     </div>
   );
 };
