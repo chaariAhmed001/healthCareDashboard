@@ -30,9 +30,9 @@ const Lists = ({ patient }) => {
         </div>
       </div>
       <div
-        className={`hidden sm:flex ${
-          activeMenu ? "lg:hidden" : "lg:flex "
-        } flex-col justify-center w-[100px]`}
+        className={`${
+          !activeMenu && "xl:flex"
+        } hidden sm:flex lg:hidden flex-col justify-center w-[100px]`}
       >
         <span className="text-sm text-secondary-color font-bold">
           {patient?.created}

@@ -449,8 +449,8 @@ export const addIcon = (
 );
 export const userIcon = (
   <svg
-    width="20"
-    height="20"
+    width="24"
+    height="24 "
     viewBox="0 0 24 25"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -499,8 +499,8 @@ export const filterIcon = (
 );
 export const activityIcon = (
   <svg
-    width="20"
-    height="20"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -523,6 +523,175 @@ export const activityIcon = (
     />
   </svg>
 );
+export const hospitalicon = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M2 22H22"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M17 2H7C4 2 3 3.79 3 6V22H21V6C21 3.79 20 2 17 2Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M14.06 15H9.92998C9.41998 15 8.98999 15.42 8.98999 15.94V22H14.99V15.94C15 15.42 14.58 15 14.06 15Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 6V11"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M9.5 8.5H14.5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+export const building = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1 22H23"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.78 22.01V17.55"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.8 10.89C18.58 10.89 17.6 11.87 17.6 13.09V15.36C17.6 16.58 18.58 17.56 19.8 17.56C21.02 17.56 22 16.58 22 15.36V13.09C22 11.87 21.02 10.89 19.8 10.89Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M2.09998 22V6.03003C2.09998 4.02003 3.10003 3.01001 5.09003 3.01001H11.32C13.31 3.01001 14.3 4.02003 14.3 6.03003V22"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.79999 8.25H10.75"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.79999 12H10.75"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.25 22V18.25"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeMiterlimit="10"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+export const building2 = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.5 22.0001H4.07997C2.91997 22.0001 1.96997 21.0701 1.96997 19.9301V5.09011C1.96997 2.47011 3.91997 1.2801 6.30997 2.4501L10.75 4.63011C11.71 5.10011 12.5 6.3501 12.5 7.4101V22.0001Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M21.97 15.0601V18.8401C21.97 21.0001 20.97 22.0001 18.81 22.0001H12.5V10.4201L12.97 10.5201L17.47 11.5301L19.5 11.9801C20.82 12.2701 21.9 12.9501 21.96 14.8701C21.97 14.9301 21.97 14.9901 21.97 15.0601Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.49997 9.00012H8.96997"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.49997 13.0001H8.96997"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M17.47 11.5301V14.7501C17.47 15.9901 16.46 17.0001 15.22 17.0001C13.98 17.0001 12.97 15.9901 12.97 14.7501V10.5201L17.47 11.5301Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M21.96 14.8701C21.9 16.0501 20.92 17.0001 19.72 17.0001C18.48 17.0001 17.47 15.9901 17.47 14.7501V11.5301L19.5 11.9801C20.82 12.2701 21.9 12.9501 21.96 14.8701Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export const navBarIcons = [
   {
     name: "notification",
@@ -624,6 +793,31 @@ export const navBarIcons = [
     ),
   },
 ];
+export const statisticsIcon = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M8.96997 22H14.97C19.97 22 21.97 20 21.97 15V9C21.97 4 19.97 2 14.97 2H8.96997C3.96997 2 1.96997 4 1.96997 9V15C1.96997 20 3.96997 22 8.96997 22Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M1.96997 12.7L7.96997 12.68C8.71997 12.68 9.55997 13.25 9.83997 13.95L10.98 16.83C11.24 17.48 11.65 17.48 11.91 16.83L14.2 11.02C14.42 10.46 14.83 10.44 15.11 10.97L16.15 12.94C16.46 13.53 17.26 14.01 17.92 14.01H21.98"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export const searchIcon = (
   <svg
     width="18"
@@ -1232,7 +1426,7 @@ export const analyticsChartByYear = [
     { x: "2018", y: 36 },
     { x: "2019", y: 38 },
     { x: "2020", y: 30 },
-    { x: "2021", y: 40 },
+    { x: "2023", y: 40 },
   ],
   [
     { x: "2016", y: 18 },
@@ -1240,9 +1434,10 @@ export const analyticsChartByYear = [
     { x: "2018", y: 32 },
     { x: "2019", y: 28 },
     { x: "2020", y: 16 },
-    { x: "2021", y: 30 },
+    { x: "2023", y: 30 },
   ],
 ];
+
 export const lineCustomSeries = [
   {
     dataSource: analyticsChart[0],
@@ -1637,7 +1832,7 @@ export const areaChartData = [
   { x: new Date(2018, 0, 1), y: 30 },
   { x: new Date(2019, 0, 1), y: 35 },
   { x: new Date(2020, 0, 1), y: 48 },
-  { x: new Date(2021, 0, 1), y: 38 },
+  { x: new Date(2023, 0, 1), y: 38 },
   { x: new Date(2022, 0, 1), y: 35 },
 ];
 export const areaCustomSeries = [
@@ -1943,11 +2138,27 @@ export const commentsList = [
     comments: "Lorem ipsum dolor",
   },
 ];
+export const linePatientCustomSeries = {
+  xName: "date",
+  yName: "weight",
+  name: "Patient Weight",
+  width: "2",
+  marker: {
+    visible: true,
+    width: 10,
+    height: 10,
+    border: { color: "#3F8EFC" },
+  },
+  type: "SplineArea",
+  fill: "rgba(63, 142, 252, 0.2)",
+};
 export const patientsList = [
   {
     image: avatar2,
     name: "Salma bennani",
     disease: "Heart Failure",
+    email: "bennani@gmail.com",
+    genre: "F",
     type: "Chronic",
     created: "Mar 15, 2022",
     age: 35,
@@ -1956,66 +2167,69 @@ export const patientsList = [
     address: "123 Main St, Anytown USA",
     recent_activity: [
       {
+        icon: building,
         type: "Medical_checkup",
         date: "2022-12-15",
       },
       {
+        icon: hospitalicon,
         type: "Escophagus Biopsy",
         date: "2022-12-20",
       },
       {
+        icon: building2,
         type: "Endoscopy",
         date: "2022-12-20",
       },
     ],
     weight_history: [
       {
-        date: "2022-01-01",
-        weight: 68,
+        date: "Jan",
+        weight: 45,
       },
       {
-        date: "2022-02-01",
-        weight: 69,
+        date: "Fev",
+        weight: 48,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
+        weight: 60,
+      },
+      {
+        date: "Avr",
+        weight: 58,
+      },
+      {
+        date: "May",
+        weight: 65,
+      },
+      {
+        date: "Jun",
         weight: 70,
       },
       {
-        date: "2022-04-01",
-        weight: 68,
+        date: "Jul",
+        weight: 65,
       },
       {
-        date: "2022-05-01",
-        weight: 71,
+        date: "Aug",
+        weight: 50,
       },
       {
-        date: "2022-06-01",
-        weight: 70,
+        date: "Sep",
+        weight: 48,
       },
       {
-        date: "2022-07-01",
-        weight: 72,
+        date: "Oct",
+        weight: 60,
       },
       {
-        date: "2022-08-01",
-        weight: 70,
+        date: "Nov",
+        weight: 65,
       },
       {
-        date: "2022-09-01",
-        weight: 72,
-      },
-      {
-        date: "2022-10-01",
-        weight: 70,
-      },
-      {
-        date: "2022-11-01",
-        weight: 71,
-      },
-      {
-        date: "2022-12-01",
-        weight: 70,
+        date: "Dec",
+        weight: 55,
       },
     ],
   },
@@ -2023,6 +2237,8 @@ export const patientsList = [
     image: avatar3,
     name: "Emma Jones",
     disease: "Type 2 Diabetes",
+    email: "Jones@gmail.com",
+    genre: "F",
     type: "Chronic",
     created: "Apr 5, 2022",
     age: 55,
@@ -2031,65 +2247,68 @@ export const patientsList = [
     address: "456 Park Ave, Big City USA",
     recent_activity: [
       {
+        icon: hospitalIcon,
         type: "Insulin injection",
         date: "2022-12-15",
       },
       {
+        icon: building,
         type: "Glycemic control check",
         date: "2022-12-20",
       },
       {
+        icon: building2,
         type: "Foot examination",
         date: "2022-12-22",
       },
     ],
     weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 82,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 84,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 86,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 85,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 87,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 86,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 88,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 87,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 89,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 87,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 88,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 87,
       },
     ],
@@ -2098,15 +2317,161 @@ export const patientsList = [
     image: avatar4,
     name: "Jackson Davis",
     disease: "Multiple sclerosis",
+    email: "Davis@gmail.com",
+    genre: "M",
     type: "Acute",
     created: "May 25, 2022",
+    age: 35,
+    weight: 70,
+    height: 180,
+    address: "123 Main St, Anytown USA",
+    recent_activity: [
+      {
+        icon: building,
+        type: "Dialysis",
+        date: "2022-12-10",
+      },
+      {
+        icon: hospitalicon,
+        type: "Medication management",
+        date: "2022-12-12",
+      },
+      {
+        icon: building2,
+        type: "Diet and exercise plan",
+        date: "2022-12-14",
+      },
+    ],
+    Weight_history: [
+      {
+        date: "Jan",
+        weight: 93,
+      },
+      {
+        date: "Fev",
+        weight: 95,
+      },
+      {
+        date: "Mar",
+        weight: 94,
+      },
+      {
+        date: "Avr",
+        weight: 93,
+      },
+      {
+        date: "May",
+        weight: 94,
+      },
+      {
+        date: "Jun",
+        weight: 95,
+      },
+      {
+        date: "Jul",
+        weight: 94,
+      },
+      {
+        date: "Aug",
+        weight: 93,
+      },
+      {
+        date: "Sep",
+        weight: 94,
+      },
+      {
+        date: "Oct",
+        weight: 95,
+      },
+      {
+        date: "Nov",
+        weight: 94,
+      },
+      {
+        date: "Dec",
+        weight: 93,
+      },
+    ],
   },
   {
     image: avatar5,
     name: "Olivia Smith",
+    email: "Smith@gmail.com",
+    genre: "F",
     disease: "Diabetes",
     type: "Chronic",
     created: "Jun 15, 2022",
+    age: 55,
+    weight: 85,
+    height: 190,
+    address: "456 Park Ave, Big City USA",
+    recent_activity: [
+      {
+        icon: building,
+        type: "Dialysis",
+        date: "2022-12-10",
+      },
+      {
+        icon: hospitalicon,
+        type: "Medication management",
+        date: "2022-12-12",
+      },
+      {
+        icon: building2,
+        type: "Diet and exercise plan",
+        date: "2022-12-14",
+      },
+    ],
+    Weight_history: [
+      {
+        date: "Jan",
+        weight: 93,
+      },
+      {
+        date: "Fev",
+        weight: 95,
+      },
+      {
+        date: "Mar",
+        weight: 94,
+      },
+      {
+        date: "Avr",
+        weight: 93,
+      },
+      {
+        date: "May",
+        weight: 94,
+      },
+      {
+        date: "Jun",
+        weight: 95,
+      },
+      {
+        date: "Jul",
+        weight: 94,
+      },
+      {
+        date: "Aug",
+        weight: 93,
+      },
+      {
+        date: "Sep",
+        weight: 94,
+      },
+      {
+        date: "Oct",
+        weight: 95,
+      },
+      {
+        date: "Nov",
+        weight: 94,
+      },
+      {
+        date: "Dec",
+        weight: 93,
+      },
+    ],
   },
   {
     image: avatar0,
@@ -2114,71 +2479,76 @@ export const patientsList = [
     disease: "Heart Failure",
     type: "Chronic",
     created: "Jul 5, 2022",
+    email: "Thomas@gmail.com",
+    genre: "M",
     age: 35,
     weight: 75,
     height: 180,
     address: "123 Main St, Smallville USA",
     recent_activity: [
       {
+        icon: building,
         type: "Physical therapy",
         date: "2022-12-15",
       },
       {
+        icon: hospitalicon,
         type: "MRI scan",
         date: "2022-12-20",
       },
       {
+        icon: hospitalicon,
         type: "Medication review",
         date: "2022-12-22",
       },
     ],
     weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 72,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 73,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 74,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 76,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 75,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 74,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 73,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 72,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 71,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 73,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 72,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 71,
       },
     ],
@@ -2188,6 +2558,8 @@ export const patientsList = [
     name: "William King",
     disease: "Influenza",
     type: "Acute",
+    email: "King@gmail.com",
+    genre: "M",
     created: "Aug 25, 2022",
     age: 28,
     weight: 60,
@@ -2195,65 +2567,68 @@ export const patientsList = [
     address: "789 Pine St, Big City USA",
     recent_activity: [
       {
+        icon: building,
         type: "Flu shot",
         date: "2022-12-15",
       },
       {
+        icon: building2,
         type: "Viral culture",
         date: "2022-12-20",
       },
       {
+        icon: hospitalicon,
         type: "Rest and fluids",
         date: "2022-12-22",
       },
     ],
     weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 59,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 61,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 60,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 62,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 61,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 60,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 62,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 63,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 62,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 61,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 63,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 64,
       },
     ],
@@ -2263,6 +2638,8 @@ export const patientsList = [
     name: "Ava Williams",
     disease: "Lupus",
     type: "Remitting",
+    email: "Williams@gmail.com",
+    genre: "F",
     created: "Mar 15, 2022",
     age: 45,
     weight: 90,
@@ -2270,65 +2647,68 @@ export const patientsList = [
     address: "321 Oak St, Smallville USA",
     recent_activity: [
       {
+        icon: building2,
         type: "Antimalarial medication",
         date: "2022-12-15",
       },
       {
+        icon: building,
         type: "Renal function check",
         date: "2022-12-20",
       },
       {
+        icon: hospitalicon,
         type: "Skin examination",
         date: "2022-12-22",
       },
     ],
     weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 88,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 91,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 90,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 92,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 90,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 93,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 92,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 91,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 90,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 89,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 88,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 87,
       },
     ],
@@ -2338,72 +2718,77 @@ export const patientsList = [
     name: "Benjamin Anderson",
     disease: "Arthritis",
     type: "Chronic",
+    email: "Anderson@gmail.com",
+    genre: "M",
     created: "Apr 5, 2022",
-    Age: 55,
-    Weight: 75,
-    Height: 165,
-    Address: "456 Oak St, Big City USA",
-    Recent_activity: [
+    age: 55,
+    weight: 75,
+    height: 165,
+    address: "456 Oak St, Big City USA",
+    recent_activity: [
       {
+        icon: hospitalicon,
         type: "Physical therapy",
         date: "2022-12-10",
       },
       {
+        icon: hospitalicon,
         type: "Pain medication",
         date: "2022-12-12",
       },
       {
+        icon: building,
         type: "Weight loss program",
         date: "2022-12-14",
       },
     ],
     Weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 74,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 72,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 75,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 76,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 74,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 73,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 76,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 75,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 74,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 76,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 77,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 75,
       },
     ],
@@ -2414,71 +2799,76 @@ export const patientsList = [
     disease: "Heart Failure",
     type: "Chronic",
     created: "May 25, 2022",
-    Age: 48,
-    Weight: 65,
-    Height: 178,
-    Address: "123 Maple St, Big City USA",
-    Recent_activity: [
+    email: "Brown@gmail.com",
+    genre: "F",
+    age: 48,
+    weight: 65,
+    height: 178,
+    address: "123 Maple St, Big City USA",
+    recent_activity: [
       {
+        icon: building,
         type: "Medication management",
         date: "2022-12-10",
       },
       {
+        icon: building2,
         type: "Cardiac rehabilitation",
         date: "2022-12-12",
       },
       {
+        icon: hospitalicon,
         type: "Diet and exercise plan",
         date: "2022-12-14",
       },
     ],
     Weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 68,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 66,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 65,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 64,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 67,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 65,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 64,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 67,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 68,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 66,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 65,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 67,
       },
     ],
@@ -2489,71 +2879,76 @@ export const patientsList = [
     disease: "Meningitis",
     type: "Acute",
     created: "Jun 15, 2022",
-    Age: 32,
-    Weight: 82,
-    Height: 183,
-    Address: "789 Pine St, Big City USA",
-    Recent_activity: [
+    email: "Peterson@gmail.com",
+    genre: "M",
+    age: 32,
+    weight: 82,
+    height: 183,
+    address: "789 Pine St, Big City USA",
+    recent_activity: [
       {
+        icon: hospitalicon,
         type: "Antibiotic treatment",
         date: "2022-12-10",
       },
       {
+        icon: building,
         type: "Fluid management",
         date: "2022-12-12",
       },
       {
+        icon: building2,
         type: "Pain management",
         date: "2022-12-14",
       },
     ],
     Weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 80,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 83,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 81,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 84,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 82,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 85,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 83,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 80,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 82,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 81,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 83,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 82,
       },
     ],
@@ -2563,72 +2958,77 @@ export const patientsList = [
     name: "Smith Grey",
     disease: "Kidney Failure",
     type: "Chronic",
+    email: "Grey@gmail.com",
+    genre: "M",
     created: "Jul 5, 2022",
     Age: 54,
     Weight: 94,
     Height: 182,
     Address: "159 Birch St, Big City USA",
-    Recent_activity: [
+    recent_activity: [
       {
+        icon: building,
         type: "Dialysis",
         date: "2022-12-10",
       },
       {
+        icon: hospitalicon,
         type: "Medication management",
         date: "2022-12-12",
       },
       {
+        icon: building2,
         type: "Diet and exercise plan",
         date: "2022-12-14",
       },
     ],
     Weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 93,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 95,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 94,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 93,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 94,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 95,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 94,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 93,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 94,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 95,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 94,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 93,
       },
     ],
@@ -2639,73 +3039,468 @@ export const patientsList = [
     disease: "Rheumatoid arthritis",
     type: "Remitting",
     created: "Aug 25, 2022",
-    Age: 44,
-    Weight: 64,
-    Height: 173,
-    Address: "965 Willow St, Big City USA",
-    Recent_activity: [
+    email: "Taylor@gmail.com",
+    genre: "F",
+    age: 44,
+    weight: 64,
+    height: 173,
+    address: "965 Willow St, Big City USA",
+    recent_activity: [
       {
+        icon: building2,
         type: "Physical therapy",
         date: "2022-12-10",
       },
       {
+        icon: building,
         type: "Medication management",
         date: "2022-12-12",
       },
       {
+        icon: hospitalicon,
         type: "Assistive device training",
         date: "2022-12-14",
       },
     ],
     Weight_history: [
       {
-        date: "2022-01-01",
+        date: "Jan",
         weight: 63,
       },
       {
-        date: "2022-02-01",
+        date: "Fev",
         weight: 65,
       },
       {
-        date: "2022-03-01",
+        date: "Mar",
         weight: 64,
       },
       {
-        date: "2022-04-01",
+        date: "Avr",
         weight: 63,
       },
       {
-        date: "2022-05-01",
+        date: "May",
         weight: 64,
       },
       {
-        date: "2022-06-01",
+        date: "Jun",
         weight: 65,
       },
       {
-        date: "2022-07-01",
+        date: "Jul",
         weight: 64,
       },
       {
-        date: "2022-08-01",
+        date: "Aug",
         weight: 63,
       },
       {
-        date: "2022-09-01",
+        date: "Sep",
         weight: 64,
       },
       {
-        date: "2022-10-01",
+        date: "Oct",
         weight: 65,
       },
       {
-        date: "2022-11-01",
+        date: "Nov",
         weight: 64,
       },
       {
-        date: "2022-12-01",
+        date: "Dec",
         weight: 63,
       },
     ],
+  },
+  {
+    image: avatar9,
+    name: "Benjamin Anderson",
+    disease: "Arthritis",
+    type: "Chronic",
+    email: "Anderson@gmail.com",
+    genre: "M",
+    created: "Apr 5, 2022",
+    age: 55,
+    weight: 75,
+    height: 165,
+    address: "456 Oak St, Big City USA",
+    recent_activity: [
+      {
+        icon: hospitalicon,
+        type: "Physical therapy",
+        date: "2022-12-10",
+      },
+      {
+        icon: hospitalicon,
+        type: "Pain medication",
+        date: "2022-12-12",
+      },
+      {
+        icon: building,
+        type: "Weight loss program",
+        date: "2022-12-14",
+      },
+    ],
+    Weight_history: [
+      {
+        date: "Jan",
+        weight: 74,
+      },
+      {
+        date: "Fev",
+        weight: 72,
+      },
+      {
+        date: "Mar",
+        weight: 75,
+      },
+      {
+        date: "Avr",
+        weight: 76,
+      },
+      {
+        date: "May",
+        weight: 74,
+      },
+      {
+        date: "Jun",
+        weight: 73,
+      },
+      {
+        date: "Jul",
+        weight: 76,
+      },
+      {
+        date: "Aug",
+        weight: 75,
+      },
+      {
+        date: "Sep",
+        weight: 74,
+      },
+      {
+        date: "Oct",
+        weight: 76,
+      },
+      {
+        date: "Nov",
+        weight: 77,
+      },
+      {
+        date: "Dec",
+        weight: 75,
+      },
+    ],
+  },
+  {
+    image: avatar7,
+    name: "Charlotte Brown",
+    disease: "Heart Failure",
+    type: "Chronic",
+    created: "May 25, 2022",
+    email: "Brown@gmail.com",
+    genre: "F",
+    age: 48,
+    weight: 65,
+    height: 178,
+    address: "123 Maple St, Big City USA",
+    recent_activity: [
+      {
+        icon: building,
+        type: "Medication management",
+        date: "2022-12-10",
+      },
+      {
+        icon: building2,
+        type: "Cardiac rehabilitation",
+        date: "2022-12-12",
+      },
+      {
+        icon: hospitalicon,
+        type: "Diet and exercise plan",
+        date: "2022-12-14",
+      },
+    ],
+    Weight_history: [
+      {
+        date: "Jan",
+        weight: 68,
+      },
+      {
+        date: "Fev",
+        weight: 66,
+      },
+      {
+        date: "Mar",
+        weight: 65,
+      },
+      {
+        date: "Avr",
+        weight: 64,
+      },
+      {
+        date: "May",
+        weight: 67,
+      },
+      {
+        date: "Jun",
+        weight: 65,
+      },
+      {
+        date: "Jul",
+        weight: 64,
+      },
+      {
+        date: "Aug",
+        weight: 67,
+      },
+      {
+        date: "Sep",
+        weight: 68,
+      },
+      {
+        date: "Oct",
+        weight: 66,
+      },
+      {
+        date: "Nov",
+        weight: 65,
+      },
+      {
+        date: "Dec",
+        weight: 67,
+      },
+    ],
+  },
+  {
+    image: avatar8,
+    name: "Logan Peterson",
+    disease: "Meningitis",
+    type: "Acute",
+    created: "Jun 15, 2022",
+    email: "Peterson@gmail.com",
+    genre: "M",
+    age: 32,
+    weight: 82,
+    height: 183,
+    address: "789 Pine St, Big City USA",
+    recent_activity: [
+      {
+        icon: hospitalicon,
+        type: "Antibiotic treatment",
+        date: "2022-12-10",
+      },
+      {
+        icon: building,
+        type: "Fluid management",
+        date: "2022-12-12",
+      },
+      {
+        icon: building2,
+        type: "Pain management",
+        date: "2022-12-14",
+      },
+    ],
+    Weight_history: [
+      {
+        date: "Jan",
+        weight: 80,
+      },
+      {
+        date: "Fev",
+        weight: 83,
+      },
+      {
+        date: "Mar",
+        weight: 81,
+      },
+      {
+        date: "Avr",
+        weight: 84,
+      },
+      {
+        date: "May",
+        weight: 82,
+      },
+      {
+        date: "Jun",
+        weight: 85,
+      },
+      {
+        date: "Jul",
+        weight: 83,
+      },
+      {
+        date: "Aug",
+        weight: 80,
+      },
+      {
+        date: "Sep",
+        weight: 82,
+      },
+      {
+        date: "Oct",
+        weight: 81,
+      },
+      {
+        date: "Nov",
+        weight: 83,
+      },
+      {
+        date: "Dec",
+        weight: 82,
+      },
+    ],
+  },
+];
+
+export const appointmentsData = [
+  {
+    Id: 1,
+    Subject: "Salma bennani",
+    StartTime: "2023-01-13T04:00:00.000Z",
+    EndTime: "2023-01-13T04:30:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 2,
+    Subject: "John Smith",
+    StartTime: "2023-01-13T05:00:00.000Z",
+    EndTime: "2023-01-13T05:30:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 3,
+    Subject: "Jane Doe",
+    StartTime: "2023-01-13T06:00:00.000Z",
+    EndTime: "2023-01-13T07:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 4,
+    Subject: "Mike Johnson",
+    StartTime: "2023-01-13T08:00:00.000Z",
+    EndTime: "2023-01-13T09:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 5,
+    Subject: "Emily Davis",
+    StartTime: "2023-01-13T10:00:00.000Z",
+    EndTime: "2023-01-13T11:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 6,
+    Subject: "Danielle Miller",
+    StartTime: "2023-02-10T02:00:00.000Z",
+    EndTime: "2023-02-10T03:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 7,
+    Subject: "Brian Wilson",
+    StartTime: "2023-03-15T04:00:00.000Z",
+    EndTime: "2023-03-15T05:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 8,
+    Subject: "Megan Lee",
+    StartTime: "2023-04-20T09:00:00.000Z",
+    EndTime: "2023-04-20T10:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 9,
+    Subject: "Emily Brown",
+    StartTime: "2023-05-25T13:00:00.000Z",
+    EndTime: "2023-05-25T14:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 10,
+    Subject: "Jacob Taylor",
+    StartTime: "2023-06-30T16:00:00.000Z",
+    EndTime: "2023-06-30T17:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 11,
+    Subject: "Nicholas Anderson",
+    StartTime: "2023-07-15T18:00:00.000Z",
+    EndTime: "2023-07-15T19:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 12,
+    Subject: "Sophia Thompson",
+    StartTime: "2023-08-22T20:00:00.000Z",
+    EndTime: "2023-08-22T21:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 13,
+    Subject: "Isabella Gonzalez",
+    StartTime: "2023-09-30T22:00:00.000Z",
+    EndTime: "2023-09-30T23:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 14,
+    Subject: "Mia Perez",
+    StartTime: "2023-01-15T01:00:00.000Z",
+    EndTime: "2023-01-15T02:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 15,
+    Subject: "Madison White",
+    StartTime: "2023-01-20T03:00:00.000Z",
+    EndTime: "2023-01-20T04:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 16,
+    Subject: "Elizabeth Green",
+    StartTime: "2023-01-25T05:00:00.000Z",
+    EndTime: "2023-01-25T06:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 17,
+    Subject: "Avery Harris",
+    StartTime: "2023-02-01T07:00:00.000Z",
+    EndTime: "2023-02-01T08:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 18,
+    Subject: "Evelyn Clark",
+    StartTime: "2023-02-10T09:00:00.000Z",
+    EndTime: "2023-02-10T10:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 19,
+    Subject: "Abigail Lewis",
+    StartTime: "2023-02-15T11:00:00.000Z",
+    EndTime: "2023-02-15T12:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 20,
+    Subject: "Aaliyah Parker",
+    StartTime: "2023-02-20T13:00:00.000Z",
+    EndTime: "2023-02-20T14:00:00.000Z",
+    colorField: "#F7F7FF",
+  },
+  {
+    Id: 21,
+    Subject: "Avery Hall",
+    StartTime: "2023-02-28T15:00:00.000Z",
+    EndTime: "2023-02-28T16:00:00.000Z",
+    colorField: "#F7F7FF",
   },
 ];

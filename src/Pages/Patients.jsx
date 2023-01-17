@@ -1,21 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Lists, PatientDetails } from "../Components";
 import { appContext } from "../Context/appContext.js";
 import { addIcon, filterIcon, patientsList, searchIcon } from "../Data/data";
 
 const Patients = () => {
-  const { activeMenu, showPatientDetails, screenSize } = useContext(appContext);
+  const { activeMenu, showPatientDetails, setShowPatientDetails, screenSize } =
+    useContext(appContext);
+  useEffect(() => {
+    screenSize >= 1024
+      ? setShowPatientDetails(false)
+      : setShowPatientDetails(true);
+  }, [screenSize]);
 
   return (
-    <div className="ml-4 mt-4 flex justifier-center flex-warp min-h-screen lg:h-[400px] w-[95%] ">
+    <div className="ml-4 mt-4 flex justifier-center flex-warp min-h-screen w-[95%] lg:w-full ">
       {showPatientDetails ? (
         <PatientDetails />
       ) : (
         <div
-          className={`${
+          className={` ${
             activeMenu
               ? "lg:w-[40%] xl:w-[30%]"
-              : "w-[94%] lg:w-[45%] xl:w-[32%]"
+              : "w-[94%] sm:w-full lg:w-[40%]"
           }`}
         >
           <div
@@ -47,8 +53,10 @@ const Patients = () => {
           </div>
           <div
             className={`${
-              activeMenu ? "lg:w-[100%]" : "w-[94%] lg:w-[45%] xl:w-[100%]"
-            }  lg:h-[500px] p-2 sm:p-4 text-primry-color dark:text-white overflow-hidden hover:overflow-scroll scroll-smooth`}
+              activeMenu
+                ? "lg:h-[880px] xl:h-[620px]"
+                : "w-[94%] sm:w-full lg:w-full lg:h-[880px] xl:h-[620px]"
+            }   p-2 sm:p-4 text-primry-color dark:text-white overflow-hidden hover:overflow-scroll scroll-smooth`}
           >
             {patientsList.map((patient, index) => (
               <Lists key={index} patient={patient} />
@@ -56,7 +64,7 @@ const Patients = () => {
           </div>
         </div>
       )}
-      {!showPatientDetails && screenSize >= 800 && <PatientDetails />}
+      {!showPatientDetails && <PatientDetails />}
     </div>
   );
 };

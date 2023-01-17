@@ -11,3 +11,5 @@ export { default as ToDoList } from "./ToDoList";
 export { default as PatientsComments } from "./PatientsComments";
 export { default as Lists } from "./Lists";
 export { default as PatientDetails } from "./PatientDetails";
+export { default as PatientProfil } from "./PatientProfil";
+export { default as PatientInfo } from "./PatientInfo";
