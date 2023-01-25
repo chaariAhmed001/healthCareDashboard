@@ -17,7 +17,7 @@ import {
   NotFound,
 } from "./Pages";
 import { appContext } from "./Context/appContext.js";
-import { patientsList } from "./Data/data";
+import { patientChat, patientsList } from "./Data/data";
 
 function App() {
   const initialState = {
@@ -31,7 +31,9 @@ function App() {
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [showPatientDetails, setShowPatientDetails] = useState(false);
-  const [patientDetails, setPatientDetails] = useState(null);
+  const [patientDetails, setPatientDetails] = useState(undefined);
+  const [showConversation, setShowConversation] = useState(false);
+  const [conversationDetails, setConversationDetails] = useState();
   const handleClick = (clicked, action) => {
     setIsClicked({
       ...initialState,
@@ -40,8 +42,8 @@ function App() {
   };
   useEffect(() => {
     setPatientDetails(patientsList?.[0]);
-  }, []);
-
+    setConversationDetails(patientChat?.[0]);
+  }, [patientsList, patientChat]);
   return (
     <div className={darkthem && "dark"}>
       <BrowserRouter>
@@ -62,6 +64,10 @@ function App() {
             setShowPatientDetails,
             patientDetails,
             setPatientDetails,
+            showConversation,
+            setShowConversation,
+            conversationDetails,
+            setConversationDetails,
           }}
         >
           <div className=" bg-main-bg dark:bg-main-dark-bg">

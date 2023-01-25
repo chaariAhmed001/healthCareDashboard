@@ -4,19 +4,23 @@ import { appContext } from "../Context/appContext.js";
 import { addIcon, filterIcon, patientsList, searchIcon } from "../Data/data";
 
 const Patients = () => {
-  const { activeMenu, showPatientDetails, setShowPatientDetails, screenSize } =
-    useContext(appContext);
+  const {
+    activeMenu,
+    showPatientDetails,
+    setShowPatientDetails,
+    screenSize,
+    patientDetails,
+  } = useContext(appContext);
   useEffect(() => {
-    screenSize >= 1024
-      ? setShowPatientDetails(false)
-      : setShowPatientDetails(true);
+    if (screenSize >= 1024) setShowPatientDetails(false);
+    else setShowPatientDetails(true);
   }, [screenSize]);
-
   return (
     <div className="ml-4 mt-4 flex justifier-center flex-warp min-h-screen w-[95%] lg:w-full ">
       {showPatientDetails ? (
         <PatientDetails />
       ) : (
+        // patinet Lists
         <div
           className={` ${
             activeMenu
@@ -25,10 +29,10 @@ const Patients = () => {
           }`}
         >
           <div
-            className={"flex flex-col justify-between mx-2 mb-2 lg:ml-5 w-full"}
+            className={"flex flex-col justify-between mx-2 mb-2 lg:ml-5 w-full "}
           >
             {/* header */}
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <h2 className="uppercase font-bold text-primry-color dark:text-white my-auto">
                 Patients
               </h2>
@@ -59,7 +63,15 @@ const Patients = () => {
             }   p-2 sm:p-4 text-primry-color dark:text-white overflow-hidden hover:overflow-scroll scroll-smooth`}
           >
             {patientsList.map((patient, index) => (
-              <Lists key={index} patient={patient} />
+              <Lists
+                key={index}
+                data={patient}
+                title={patient?.name}
+                img={patient?.image}
+                subtitle={patient?.disease}
+                date={patient?.created}
+                type={patient?.type}
+              />
             ))}
           </div>
         </div>

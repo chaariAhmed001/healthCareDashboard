@@ -39,3 +39,6 @@
 .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
   border: none;
 }
+.truncate {
+  text-overflow: ellipsis;
+}

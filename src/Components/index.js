@@ -13,3 +13,4 @@ export { default as Lists } from "./Lists";
 export { default as PatientDetails } from "./PatientDetails";
 export { default as PatientProfil } from "./PatientProfil";
 export { default as PatientInfo } from "./PatientInfo";
+export { default as PatientChat } from "./PatientChat";

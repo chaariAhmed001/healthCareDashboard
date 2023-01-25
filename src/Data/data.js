@@ -691,6 +691,31 @@ export const building2 = (
     />
   </svg>
 );
+export const settingsIcon = (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5 10C3.9 10 3 10.9 3 12C3 13.1 3.9 14 5 14C6.1 14 7 13.1 7 12C7 10.9 6.1 10 5 10Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M19 10C17.9 10 17 10.9 17 12C17 13.1 17.9 14 19 14C20.1 14 21 13.1 21 12C21 10.9 20.1 10 19 10Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
+  </svg>
+);
 
 export const navBarIcons = [
   {
@@ -848,25 +873,25 @@ export const notificationData = [
     image: avatar2,
     message: "Roman Joined the Team!",
     desc: "Congratulate him",
-    time: "9:08 AM",
+    time: "9:08",
   },
   {
     image: avatar3,
     message: "New message received",
     desc: "Salma sent you new message",
-    time: "11:56 AM",
+    time: "11:56",
   },
   {
     image: avatar4,
     message: "New Payment received",
     desc: "Check your earnings",
-    time: "4:39 AM",
+    time: "4:39",
   },
   {
     image: avatar,
     message: "Jolly completed tasks",
     desc: "Assign her new tasks",
-    time: "1:12 AM",
+    time: "1:12",
   },
 ];
 export const chatData = [
@@ -874,25 +899,25 @@ export const chatData = [
     image: avatar0,
     message: "Roman Joined the Team!",
     desc: "Salma sent you new message",
-    time: "9:08 AM",
+    time: "9:08",
   },
   {
     image: avatar3,
     message: "can we fixe an appointment",
     desc: "Jaun sent you new message",
-    time: "11:56 AM",
+    time: "11:56",
   },
   {
     image: avatar1,
     message: "Task completed",
     desc: "Roman sent you new message",
-    time: "4:39 AM",
+    time: "4:39",
   },
   {
     image: avatar5,
     message: "can we change appointment date",
     desc: "Jolly sent you new message",
-    time: "1:12 AM",
+    time: "1:12",
   },
 ];
 
@@ -1497,25 +1522,25 @@ export const rigthAroow = (
 export const todyPatients = [
   {
     photo: avatar,
-    time: "9 am",
+    time: "9",
     name: "Arisa Siuneo",
     Diagnosis: "Medical Chekup",
   },
   {
     photo: avatar2,
-    time: "9:30 am",
+    time: "9:30",
     name: "Arisa Siuneo",
     Diagnosis: "Endoscopy",
   },
   {
     photo: avatar5,
-    time: "11 am",
+    time: "11",
     name: "Arisa Siuneo",
     Diagnosis: "Medical Chekup",
   },
   {
     photo: avatar0,
-    time: "14 pm",
+    time: "14",
     name: "Arisa Siuneo",
     Diagnosis: "Medical Chekup",
   },
@@ -1813,19 +1838,19 @@ export const eventsData = [
     icon: meetingIcon,
     title: "Meeting",
     desc: "with joe black",
-    Time: "10:30 am",
+    Time: "10:30",
   },
   {
     icon: universityIcon,
     title: "Lecture",
     desc: "Harvard School",
-    Time: "14:00 pm",
+    Time: "14:00",
   },
   {
     icon: hospitalIcon,
     title: "Metting",
     desc: "Board Meeting",
-    Time: "17:30 pm",
+    Time: "17:30",
   },
 ];
 export const areaChartData = [
@@ -3502,5 +3527,458 @@ export const appointmentsData = [
     StartTime: "2023-02-28T15:00:00.000Z",
     EndTime: "2023-02-28T16:00:00.000Z",
     colorField: "#F7F7FF",
+  },
+];
+export const patientChat = [
+  {
+    image: avatar0,
+    name: "John Smith",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of pain in my chest and difficulty breathing.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, John. Based on your symptoms, it sounds like you may be experiencing chest pain. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to avoid any activities that may exacerbate your symptoms.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar1,
+    name: "Michael Brown",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of joint pain and stiffness.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Michael. Based on your symptoms, it sounds like you may be experiencing arthritis. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to maintain a healthy weight, exercise regularly, and use heat or cold therapy to relieve pain.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar8,
+    name: "Emily Davis",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of stomach pain and nausea.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Emily. Based on your symptoms, it sounds like you may be experiencing gastritis. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "doctor",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to avoid spicy or fatty foods, and try to eat smaller meals more frequently.",
+        time: "9:15",
+        sender: "patient",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "doctor",
+      },
+    ],
+  },
+  {
+    image: avatar11,
+    name: "Madison Taylor",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of back pain and weakness.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Madison. Based on your symptoms, it sounds like you may be experiencing a muscle strain. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "docotr",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to rest and avoid activities that may exacerbate your symptoms, and try to use ice or heat therapy to relieve pain.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar2,
+    name: "Nicholas Hernandez",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of coughing and chest congestion.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Nicholas. Based on your symptoms, it sounds like you may be experiencing bronchitis. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to get plenty of rest, drink fluids, and use over-the-counter medications to relieve symptoms.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar4,
+    name: "Samantha Thompson",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of neck pain and stiffness.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Samantha. Based on your symptoms, it sounds like you may be experiencing a neck sprain. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to rest and avoid activities that may exacerbate your symptoms, and try to use ice or heat therapy to relieve pain.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar3,
+    name: "Ashley Garcia",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of difficulty sleeping and frequent nightmares.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Ashley. Based on your symptoms, it sounds like you may be experiencing insomnia. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to establish a consistent sleep schedule, avoid caffeine and electronics close to bedtime, and try to relax before going to sleep.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar7,
+    name: "David Jackson",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of sneezing, runny nose and itchy eyes.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, David. Based on your symptoms, it sounds like you may be experiencing allergies. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to stay indoors during high pollen count, use air purifiers and avoid exposure to allergens that you know trigger your symptoms.",
+        time: "9:15",
+        sender: "doctor",
+      },
+      {
+        message:
+          "I understand, doctor. I'll schedule an appointment as soon as possible.",
+        time: "9:17",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar5,
+    name: "James Garcia",
+    discussion: [
+      {
+        message:
+          "Hello, doctor. I've been experiencing a lot of chest pain and shortness of breath.",
+        time: "9:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, James. Based on your symptoms, it sounds like you may be experiencing angina. I would recommend coming in for an examination and possibly some tests to determine the cause.",
+        time: "9:10",
+        sender: "doctor",
+      },
+      {
+        message: "Thank you, doctor. Should I come in as soon as possible?",
+        time: "9:12",
+        sender: "patient",
+      },
+      {
+        message:
+          "Yes, I would recommend coming in as soon as you can for an examination. In the meantime, try to avoid heavy meals, stress and cold weather, and try to exercise regularly.",
+        time: "9:15",
+        sender: "doctor",
+      },
+    ],
+  },
+  {
+    image: avatar2,
+    name: "Emily Smith",
+    discussion: [
+      {
+        message: "Hi, I've been having a lot of headaches lately.",
+        time: "10:30",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Emily. Based on your symptoms, it sounds like you may have a tension headache. I would recommend taking over-the-counter pain relievers and making sure you're getting enough sleep and staying hydrated.",
+        time: "10:35",
+        sender: "doctor",
+      },
+      {
+        message: "Thanks, doctor. Is there anything else I should be doing?",
+        time: "10:38",
+        sender: "patient",
+      },
+      {
+        message:
+          "It would also be helpful to practice stress-reducing techniques such as yoga or meditation. If your headaches persist or worsen, please schedule an appointment to come in for an examination.",
+        time: "10:40",
+        sender: "doctor",
+      },
+    ],
+  },
+  {
+    image: avatar3,
+    name: "Jessica Williams",
+    discussion: [
+      {
+        message: "I've been having trouble sleeping at night.",
+        time: "7:00",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Jessica. It sounds like you may be experiencing insomnia. I would recommend avoiding caffeine and electronics before bedtime, establishing a regular sleep schedule, and trying relaxation techniques such as deep breathing or meditation.",
+        time: "7:05",
+        sender: "doctor",
+      },
+      {
+        message: "Thanks, doctor. Should I come in for an appointment?",
+        time: "7:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "It would be a good idea to schedule an appointment so we can rule out any underlying medical conditions and discuss any other treatment options. In the meantime, try to make changes to your sleep habits and see if that improves your symptoms.",
+        time: "7:10",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar4,
+    name: "David Lee",
+    discussion: [
+      {
+        message: "I've been having a lot of stomach pain and diarrhea.",
+        time: "1:00",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, David. Based on your symptoms, it sounds like you may have a stomach virus or food poisoning. I would recommend staying hydrated and avoiding solid foods for a day or so, and taking over-the-counter pain relievers if needed.",
+        time: "1:05",
+        sender: "doctor",
+      },
+      {
+        message:
+          "Thanks, doctor. How long should I expect these symptoms to last?",
+        time: "1:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Symptoms of a stomach virus or food poisoning usually last anywhere from a day to a week. If your symptoms persist or worsen, please schedule an appointment to come in for an examination.",
+        time: "1:10",
+        sender: "doctor",
+      },
+    ],
+  },
+  {
+    image: avatar1,
+    name: "Michael Brown",
+    discussion: [
+      {
+        message: "I think I may have a cold or the flu.",
+        time: "5:00",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello, Michael. Based on your symptoms, it sounds like you may have a cold or the flu. I would recommend getting plenty of rest, staying hydrated, and taking.over-the-counter medications to relieve symptoms such as fever and congestion",
+        time: "5:05",
+        sender: "patient",
+      },
+      {
+        message:
+          "Thanks, doctor. How long should I expect these symptoms to last?",
+        time: "5:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "Symptoms of a cold can last for up to a week or two, while the flu can last for several weeks. If your symptoms worsen or persist, please schedule an appointment to come in for an examination.",
+        time: "5:10",
+        sender: "patient",
+      },
+    ],
+  },
+  {
+    image: avatar6,
+    name: "Amanda Johnson",
+    discussion: [
+      {
+        message: "I've been experiencing a lot of joint pain and stiffness.",
+        time: "3:00",
+        sender: "patient",
+      },
+      {
+        message:
+          "Hello,anda. Based on your symptoms, it sounds like you may be experiencing arthritis. I would recommend taking over-the-counter pain relievers, engaging in regular low-impact exercise, and using hot or cold compresses to relieve pain and stiffness.",
+        time: "3:05",
+        sender: "doctor",
+      },
+      {
+        message: "Thanks, doctor. Is there anything else I should be doing?",
+        time: "3:08",
+        sender: "patient",
+      },
+      {
+        message:
+          "It would be helpful to maintain a healthy diet, keep your weight in a healthy range, and try to avoid activities that put too much stress on your joints. Please schedule an appointment to come in for an examination so we can discuss any other treatment options.",
+        time: "3:10",
+        sender: "doctor",
+      },
+    ],
   },
 ];
